@@ -5,4 +5,11 @@ El contenido se ha redactado mientras cursaba el Bootamp que de desarrollador we
 
 Todo el contenido ha sido modificado para facilitar mi comprensión de la materia, y en la información se ha ampliado con otras fuentes como W3Schools, CodeCademy, Wikipedia.
 
+## Visualizar los archivos PHP
+
+* Para poder visualizar estos archivos .php en funcionamiento desde el navegador, es necesario tener instalado [XAMPP](https://www.apachefriends.org/es/index.html) o [Docker](https://www.docker.com/).
+* En el caso de usar docker:
+    * La imagen php-environment de docker se encuentra en la carpeta 0-docker y se puede instalar una vez instalado docker con el comando "sudo docker-compose up -d --build"
+    * La carpeta raíz php/ está preparada para ejecutar desde el terminal el comando "sudo docker-compose up -d --build" y poder visualizar el archivo desde el navegador en http://localhost:8080/nombre-del-directorio/nombre-del-archivo.php
+
 ## Indice
