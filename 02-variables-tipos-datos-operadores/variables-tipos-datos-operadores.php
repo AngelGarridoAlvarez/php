@@ -108,7 +108,7 @@ echo $yo;//Manuel Pérez Fernández
 
 //Si intento cambiar el valor a una constante:
 
-define('yo', "Pepe Pérez");//Notice:  Constant yo already defined in /home/angel/github/php/2-variables-tipos-datos-operadores/variables-tipos-datos-operadores.php on line 109
+define('yo', "Pepe Pérez");//Notice:  Constant yo already defined in /home/angel/github/php/02-variables-tipos-datos-operadores/variables-tipos-datos-operadores.php on line 109
 echo yo;//Ángel Garrido Álvarez
 
 // ## 4. Constantes predefinidas
@@ -119,7 +119,7 @@ echo PHP_OS; // Linux
 echo PHP_VERSION;//7.4.3
 echo PHP_EXTENSION_DIR;// /usr/lib/php/20190902
 echo __LINE__;// 121
-echo __FILE__;// /home/angel/github/php/2-variables-tipos-datos-operadores/variables-tipos-datos-operadores.php
+echo __FILE__;// /home/angel/github/php/02-variables-tipos-datos-operadores/variables-tipos-datos-operadores.php
 function holaMundo()
 {echo __FUNCTION__;//Me dice dentro de que función está
 };

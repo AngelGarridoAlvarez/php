@@ -27,7 +27,7 @@ echo '<p> El array  $_GET presenta la siguiente estructura</p>';
 var_dump($_GET);
 
 /*
- /var/www/html/3-variables-GET-POST/2-recibir.php:22:
+ /var/www/html/03-variables-GET-POST/2-recibir.php:22:
 array (size=3)
   'nombre' => string 'Manolo' (length=6)
   'apellidos' => string 'Cabeza Bolo' (length=11)
@@ -45,7 +45,7 @@ echo "<p> El array \$_POST presenta la siguiente estructura:</p>";
 
 var_dump($_POST);
 /*
- /var/www/html/3-variables-GET-POST/2-recibir.php:41:
+ /var/www/html/03-variables-GET-POST/2-recibir.php:41:
 array (size=2)
   'nombre2' => string 'Ángel' (length=6)
   'apellidos2' => string 'Garrido Álvarez' (length=16)
