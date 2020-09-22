@@ -12,9 +12,9 @@ instrucciones
 ### 1.1. Ejemplo mostrar números del 1 al 100 separados por comas y con un . final en el 100.
  */
 $numero = 0;
-while ($numero<=100){
+while ($numero <= 100) {
     echo $numero;
-    if($numero == 100){
+    if ($numero == 100) {
         echo '.';
     } else {
         echo ', ';
@@ -30,7 +30,7 @@ echo "<hr/>";
 
 // Con isset comprobamos si la variable existe
 
-if(isset($_GET['numero'])){
+if (isset($_GET['numero'])) {
     $numero = (int)$_GET['numero'];//casteamos la variable numero con int para que en lugar de devolvernos un string nos devuelva un entero
 } else {
     $numero = 1;
@@ -43,8 +43,8 @@ echo "<h1>Tabla de multriplicar del número $numero</h1>";
 
 $contador = 1;
 while ($contador <= 10) {
-    echo "$numero x $contador = ".($numero*$contador)."<br/>";
-    $contador ++;
+    echo "$numero x $contador = " . ($numero * $contador) . "<br/>";
+    $contador++;
 }
 
 // http://localhost:8080/05-bucles/bucles.php?numero=10
@@ -84,11 +84,26 @@ bloque de instrucciones
 //* Ejemplo: sumar todos los números del 1 al 100 y que se muestre el resultdo final
 
 $resultado = 0;
-for($i = 0; $i <= 100; $i++){
+for ($i = 0; $i <= 100; $i++) {
     $resultado = $resultado + $i;
-    $resultadoAnterior = $resultado -$i;
+    $resultadoAnterior = $resultado - $i;
     echo "<h4>$i. El resultado es $resultadoAnterior + $i = $resultado</h4>";
 
 }
+
+// ## 4. Break
+// * Permite salir de la ejecución de un bucle
+
+for ($contador = 1; $contador <= 10; $contador++) {
+    if ($numero == 45) {
+        echo "No se puede mostrar el 45 porque tiene una rima muy grosera";
+        break;
+    }
+    echo "$numero x $contador = " . ($numero * $contador) . "<br/>";
+}
+
+//http://localhost:8080/05-bucles/bucles.php?numero=45
+// http://localhost:8080/05-bucles/bucles.php?numero=10
+
 
 ?>
